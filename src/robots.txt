@@ -1,0 +1,36 @@
+
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /features/
+Allow: /pricing/
+Allow: /product/
+
+# Block app subdomain
+User-agent: *
+Disallow: /app/
+Disallow: /checkout/
+Disallow: /account/
+Disallow: /login/
+Disallow: /register/
+
+# Block for specific bots
+User-agent: Googlebot
+Disallow: /app/
+Disallow: /checkout/
+Disallow: /account/
+
+User-agent: Bingbot
+Disallow: /app/
+Disallow: /checkout/
+Disallow: /account/
+
+# Note: In a real implementation, this would be configured as follows:
+# For the main domain (seudominio.com):
+# Allow: /
+# Allow: /blog/
+# Allow: /product/ 
+# etc.
+
+# For the app subdomain (app.seudominio.com):
+# Disallow: /

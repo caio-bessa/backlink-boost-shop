@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom theme colors
+				theme: {
+					'light-green': '#D9F4C7',
+					'yellow': '#F8FA90',
+					'light-yellow': '#F4EF88',
+					'beige': '#AC9969',
+					'teal': '#9DCDC0',
+					'text': '#111111',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

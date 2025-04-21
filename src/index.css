@@ -4,51 +4,47 @@
 
 @layer base {
   :root {
+    /* Base theme */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 7%; /* #111111 - almost black for text */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 7%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Theme colors using provided palette */
+    --primary: 84 76% 87%; /* #D9F4C7 - light green */
+    --primary-foreground: 0 0% 7%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 60 92% 77%; /* #F8FA90 - yellow */
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 56 79% 74%; /* #F4EF88 - light yellow */
+    --muted-foreground: 0 0% 7%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 38 32% 54%; /* #AC9969 - beige */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 164 29% 71%; /* #9DCDC0 - teal */
+    --input: 164 29% 71%;
+    --ring: 38 32% 54%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar styles */
+    --sidebar-background: 84 76% 87%; /* Light green background */
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 38 32% 54%; /* Beige */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 164 29% 71%; /* Teal */
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 60 92% 77%; /* Yellow */
+    --sidebar-ring: 38 32% 54%;
   }
 
   .dark {
