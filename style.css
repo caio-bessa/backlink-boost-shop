@@ -1,0 +1,106 @@
+
+/*
+Theme Name: BacklinkBoost
+Theme URI: https://backlinkboost.com
+Description: A child theme of Astra for BacklinkBoost application
+Author: BacklinkBoost
+Author URI: https://backlinkboost.com
+Template: astra
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: backlinkboost
+*/
+
+/* Import parent theme styles */
+@import url('../astra/style.css');
+
+/* Custom CSS for BacklinkBoost */
+:root {
+  --theme-light-green: #D9F4C7;
+  --theme-yellow: #F8FA90;
+  --theme-beige: #F4EF88;
+  --theme-brown: #AC9969;
+  --theme-teal: #9DCDC0;
+  --theme-text: #111111;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--theme-text);
+}
+
+.bg-theme-light-green { background-color: var(--theme-light-green); }
+.bg-theme-yellow { background-color: var(--theme-yellow); }
+.bg-theme-beige { background-color: var(--theme-beige); }
+.bg-theme-brown { background-color: var(--theme-brown); }
+.bg-theme-teal { background-color: var(--theme-teal); }
+.text-theme-text { color: var(--theme-text); }
+
+/* Custom buttons */
+.btn-primary {
+  background-color: var(--theme-yellow);
+  color: var(--theme-text);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--theme-beige);
+}
+
+.btn-secondary {
+  background-color: var(--theme-teal);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--theme-brown);
+}
+
+/* Custom layout elements */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Dashboard specific styles */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: var(--theme-light-green);
+  border-right: 1px solid var(--theme-teal);
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
