@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,11 +15,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 7%;
 
-    /* Theme colors using provided palette */
-    --primary: 84 76% 87%; /* #D9F4C7 - light green */
+    /* Theme colors using provided palette with yellow as primary */
+    --primary: 60 92% 77%; /* #F8FA90 - yellow as primary */
     --primary-foreground: 0 0% 7%;
 
-    --secondary: 60 92% 77%; /* #F8FA90 - yellow */
+    --secondary: 84 76% 87%; /* #D9F4C7 - light green */
     --secondary-foreground: 0 0% 7%;
 
     --muted: 56 79% 74%; /* #F4EF88 - light yellow */
@@ -32,15 +33,15 @@
 
     --border: 164 29% 71%; /* #9DCDC0 - teal */
     --input: 164 29% 71%;
-    --ring: 38 32% 54%;
+    --ring: 60 92% 77%; /* Yellow for focus rings */
 
     --radius: 0.5rem;
 
     /* Sidebar styles */
-    --sidebar-background: 84 76% 87%; /* Light green background */
+    --sidebar-background: 0 0% 100%; /* White background */
     --sidebar-foreground: 0 0% 7%;
-    --sidebar-primary: 38 32% 54%; /* Beige */
-    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-primary: 60 92% 77%; /* Yellow as primary */
+    --sidebar-primary-foreground: 0 0% 7%;
     --sidebar-accent: 164 29% 71%; /* Teal */
     --sidebar-accent-foreground: 0 0% 7%;
     --sidebar-border: 60 92% 77%; /* Yellow */
@@ -57,7 +58,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 60 92% 77%; /* Yellow remains primary in dark mode */
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -74,15 +75,15 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 60 92% 77%; /* Yellow for focus rings */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-primary: 60 92% 77%; /* Yellow as primary */
+    --sidebar-primary-foreground: 0 0% 7%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 60 92% 77%; /* Yellow for focus rings */
   }
 }
 
